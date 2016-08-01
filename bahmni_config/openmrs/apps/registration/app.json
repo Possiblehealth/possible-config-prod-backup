@@ -20,12 +20,12 @@
         "mandatoryPersonAttributes": [
             "Caste"
         ],
-	"autoCompleteFields": [
+        "autoCompleteFields": [
             "familyName"
         ],
         "printOptions": [
             {
-                "label": "P<u>r</u>int Sticker",
+                "label": "Print Label",
                 "templateUrl": "/bahmni_config/openmrs/apps/registration/supplementalPaperLayout/print.html",
                 "shortcutKey": "r"
             }
@@ -35,19 +35,35 @@
         "conceptSetUI": {
             "Department Sent To": {
                 "required": false,
-                "autocomplete": true
+                "dropdown":true
             },
-            "Hospitals, Referred by, Data": {},
+            "Hospitals, Referred by, Data": {
+                "autocomplete": true,
+                "nonCodedConceptName": "Hospitals, Referred by, Non coded",
+                "codedConceptName": "Hospitals, Referred by"
+            },
             "Hospitals, Referred by": {
-                "answersConceptName": "Hospitals, Referred by, Answers",
+                "answersConceptName": "Hospitals, Referred by",
                 "required": false,
                 "autocomplete": true
             },
             "Hospitals, Referred by, Non coded": {
-                "answersConceptName": "Hospitals, Referred by, Answers",
+                "answersConceptName": "Hospitals, Referred by",
                 "required": false,
                 "autocomplete": true
             }
-        }
+        },
+        "patientSearch": {
+            "address": {
+                "label": "VDC/Municipality",
+                "placeholder": "Enter VDC/Municipality",
+                "field": "city_village"
+            }
+        },
+		"patientSearchResults": {
+			"address": {
+				"fields" : ["city_village", "address1"]
+			}
+		}
     }
 }

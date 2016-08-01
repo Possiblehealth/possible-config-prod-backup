@@ -5,7 +5,7 @@
         "type": "link",
         "label": "Registration",
         "url": "../registration/",
-        "icon": "icon-bahmni-registration",
+        "icon": "fa-user",
         "order": 1,
         "requiredPrivilege": "app:registration"
     },
@@ -29,24 +29,15 @@
         "order": 3,
         "requiredPrivilege": "app:adt"
     },
-    "bahmni_orders": {
-        "id": "bahmni.orders",
+    "bahmni_admin": {
+        "id": "bahmni.admin",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
-        "label": "Orders",
-        "url": "../orders/#/search",
-        "icon": "icon-bahmni-orders",
-        "order": 4,
-        "requiredPrivilege": "app:orders"
-    },
-    "bahmniPrograms": {
-        "id": "bahmni.programs",
-        "extensionPointId": "org.bahmni.home.dashboard",
-        "type": "link",
-        "label": "Programs",
-        "url": "../clinical/#/programs/patient/search",
-        "icon": "icon-bahmni-program",
-        "order": 5
+        "label": "Admin",
+        "url": "../admin/#/dashboard/home",
+        "icon": "fa-cogs",
+        "order": 6,
+        "requiredPrivilege": "app:admin"
     },
     "bahmni_reports": {
         "id": "bahmni.reports",
@@ -54,8 +45,8 @@
         "type": "link",
         "label": "Reports",
         "url": "../reports/#/dashboard/home",
-        "icon": "icon-bahmni-reports",
-        "order": 6
+        "icon": "fa-user",
+        "order": 5
     },
     "bahmni_billing": {
         "id": "bahmni.billing",
@@ -63,38 +54,37 @@
         "type": "link",
         "label": "Prescription",
         "url": "../clinical/",
-        "icon": "fa-flask",
-        "order": 7,
+        "icon": "fa-stethoscope",
+        "order": 9,
         "requiredPrivilege": "app:pharmacy"
     },
-    "bahmni_admin": {
-        "id": "bahmni.admin",
+    "bahmni_orders": {
+        "id": "bahmni.orders",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
-        "label": "Admin",
-        "url": "../admin/#/dashboard/home",
-        "icon": "icon-bahmni-admin",
-        "order": 8,
-        "requiredPrivilege": "app:admin"
+        "label": "Orders",
+        "url": "../orders/#/search",
+        "icon": "fa-book",
+        "order": 4,
+        "requiredPrivilege": "app:orders"
     },
     "bahmni_incidentreporting": {
         "id": "bahmni.incidentReporting",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
-        "label": "Adverse Event Reporting",
+        "label": "Incident Reporting",
         "url": "https://docs.google.com/forms/d/1k55evW5y6v8_Tg1rN8IyNXGVbv1UbtKHEoPpinjdYgk/viewform?c=0&w=1",
         "target": "_blank",
         "icon": "fa-pencil-square-o",
-        "order": 9
+        "order": 10
     },
-    "bahmni_issuereporting": {
-        "id": "bahmni.issueReporting",
+    "bahmniPrograms": {
+        "id": "bahmni.programs",
         "extensionPointId": "org.bahmni.home.dashboard",
         "type": "link",
-        "label": "IT/EHR Support",
-        "url": "https://docs.google.com/a/possiblehealth.org/forms/d/1C-F0ZBfhEaJCJDEj_iCfw4RZwYhajJV49D0IA_tLi4w/viewform?entry.1164338174&entry.94144145&entry.598291519=@possiblehealth.org&entry.1513625367=Today&entry.1833753534",
-        "target": "_blank",
-        "icon": "fa-support",
-        "order": 10
+        "label": "Programs",
+        "url": "../clinical/#/programs/patient/search",
+        "icon": "fa-tasks",
+        "order": 11
     }
 }

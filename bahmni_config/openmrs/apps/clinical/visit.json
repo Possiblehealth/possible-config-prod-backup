@@ -179,89 +179,23 @@
                 "displayOrder": 5
             }
         }
-    } ,"visitSummary": {
-    "translationKey": "Visit Summary",
-    "printing": {
-      "title": "Bahmni",
-      "header": "Visit Summary",
-      "logo": "../images/bahmniLogo.png"
     },
-    "sections": {
-      "PatientInformation": {
-        "type": "patientInformation",
-        "displayOrder": 0,
-        "config": {
-          "title": "PatientInformation",
-          "patientAttributes": [
-            "caste",
-            "class",
-            "education",
-            "occupation",
-            "debt",
-            "distanceFromCenter",
-            "isUrban",
-            "cluster",
-            "RationCard",
-            "familyIncome"
-          ],
-          "addressFields": [
-            "address1",
-            "address2",
-            "cityVillage",
-            "countryDistrict"
-          ]
-        }
-      },
-       "Diagnosis": {
-            "type": "diagnosis",
-            "title": "Diagnosis",
-            "displayOrder": 1,
-            "config": {
-                "translationKey": "VISIT_TITLE_DIAGNOSIS_KEY",
-                "showCertainty": true,
-                "showOrder": true,
-                "showDetailsButton": true
-            }
+    "birthCertificate": {
+        "title": "Birth Certificate",
+        "printing": {
+            "title": "",
+            "header": "",
+            "logo": ""
         },
-           "Disposition": {
-            "type": "disposition",
-            "translationKey": "VISIT_TITLE_DISPOSITIONS_KEY",
-            "displayOrder": 2,
-            "config": {
-                "translationKey":"VISIT_TITLE_DISPOSITION_KEY",
-                "numberOfVisits": 1,
-                "showDetailsButton": true
+        "sections": {
+            "Birth Certificate": {
+                "type": "custom",
+                "displayOrder": 1,
+                "config": {
+                    "title": "Possible Birth Certificate",
+                    "template": "<birth-certificates></birth-certificates>"
+                }
             }
-        },
-         "labInvestigations": {
-        "type": "investigationResult",
-        "displayOrder": 3,
-        "config": {
-          "title": "Lab Investigations",
-          "translationKey": "LAB_INVESTIGATION",
-          "showChart": true,
-          "showTable": false,
-          "showNormalLabResults": true,
-          "showCommentsExpanded": true,
-          "showAccessionNotes": true,
-          "numberOfVisits": 4,
-          "initialAccessionCount": 1,
-          "latestAccessionCount": 1
         }
-      },
-      "treatments": {
-        "type": "treatment",
-        "displayOrder": 4,
-        "config": {
-          "translationKey": "DISCHARGE_SUMMARY_TREATMENTS_KEY",
-          "showFlowSheet": false,
-          "showListView": true,
-          "showOtherActive": true,
-          "showDetailsButton": true,
-          "showRoute": true,
-          "showDrugForm": true
-        }
-      }
     }
-  }
 }
